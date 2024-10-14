@@ -26,14 +26,14 @@ const userSchema=new mongoose.Schema({
         maxlength:[10,"Phone number should be of length 10"],
         minlength:[10,"Phone number should be of length 10"],
         unique:[true, "Phone number is already is use"],
-        required:[true,"Phone number should be provided"],
+        required:[true,"Phone number should be provided"]
     },
 
     email:{
         type:String,
         trim:true,
         required:[true,"Email should be provided"],
-        unique:[true,"Email is already in use"],
+        unique:[true,"Email is already in use"], 
         match:[/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
     },
 
